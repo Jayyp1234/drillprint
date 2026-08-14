@@ -1,0 +1,24 @@
+{
+  "version": "v8",
+  "build_seconds": 27.5,
+  "episodes": 176,
+  "relabeled_to_normal": [
+    "stick_slip/L1500_rpm90_ts1.3_jb400",
+    "stick_slip/L1500_rpm120_ts1.3_jb200",
+    "stick_slip/L1500_rpm120_ts1.3_jb400",
+    "stick_slip/L1500_rpm120_ts1.6_jb400",
+    "stick_slip/L2250_rpm90_ts1.3_jb400",
+    "stick_slip/L2250_rpm120_ts1.3_jb200",
+    "stick_slip/L2250_rpm120_ts1.3_jb400",
+    "stick_slip/L3000_rpm120_ts1.3_jb400",
+    "stick_slip/L4000_rpm120_ts1.3_jb400",
+    "stick_slip/L5000_rpm120_ts1.3_jb400"
+  ],
+  "episodes_by_class": {
+    "BIT_BOUNCE": 9,
+    "NORMAL_DRILLING": 15,
+    "STICK_SLIP": 125,
+    "WHIRL_BACKWARD": 27
+  },
+  "n_hashes": 392070
+}

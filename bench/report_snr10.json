@@ -1,0 +1,176 @@
+{
+  "protocol": "A19/\u00a714",
+  "harness": 2,
+  "normal_s": 240.0,
+  "library_version": "v8",
+  "snr_levels_db": [
+    10.0
+  ],
+  "n_runs_per_snr": 10,
+  "segment_s": 300.0,
+  "calibration": {
+    "baseline": {
+      "budget_fa_per_hour": 1.0,
+      "validation_hours": 0.75,
+      "quantile": 0.9994444444444445,
+      "thresholds": {
+        "STICK_SLIP": 0.05354408311824251,
+        "WHIRL_BACKWARD": 0.010751713146401594,
+        "BIT_BOUNCE": 0.015618394519738912
+      },
+      "seeds": [
+        9001,
+        9002,
+        9003
+      ],
+      "variants": [
+        "quiet",
+        "pump60",
+        "pump110"
+      ]
+    },
+    "tier1": {
+      "budget_fa_per_hour": 2.0,
+      "validation_hours": 0.75,
+      "quantile": 0.9988888888888889,
+      "thresholds": {
+        "STICK_SLIP": 0.05209874230440269,
+        "WHIRL_BACKWARD": 0.010635710204707162,
+        "BIT_BOUNCE": 0.015481399909919006
+      },
+      "seeds": [
+        9001,
+        9002,
+        9003
+      ],
+      "variants": [
+        "quiet",
+        "pump60",
+        "pump110"
+      ]
+    }
+  },
+  "results": {
+    "10.0": {
+      "drillprint": {
+        "STICK_SLIP": {
+          "tp": 1,
+          "fp": 5,
+          "fn": 9,
+          "late": 8,
+          "precision": 0.1667,
+          "recall": 0.1,
+          "f1": 0.125,
+          "latency_mean_s": 45.6,
+          "latencies_s": [
+            45.6
+          ],
+          "median_latency_s": 45.6,
+          "false_alerts_per_normal_hour": 1.875
+        },
+        "WHIRL_BACKWARD": {
+          "tp": 10,
+          "fp": 2,
+          "fn": 0,
+          "late": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1": 0.9091,
+          "latency_mean_s": 3.135,
+          "latencies_s": [
+            2.939,
+            3.258,
+            2.925,
+            2.974,
+            3.644,
+            2.917,
+            2.913,
+            3.558,
+            3.199,
+            3.028
+          ],
+          "median_latency_s": 3.028,
+          "false_alerts_per_normal_hour": 0.75
+        },
+        "BIT_BOUNCE": {
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "late": 0,
+          "precision": 0.9091,
+          "recall": 1.0,
+          "f1": 0.9524,
+          "latency_mean_s": 3.039,
+          "latencies_s": [
+            3.62,
+            3.65,
+            2.998,
+            3.042,
+            2.792,
+            2.773,
+            2.855,
+            2.652,
+            2.948,
+            3.063
+          ],
+          "median_latency_s": 2.998,
+          "false_alerts_per_normal_hour": 0.375
+        }
+      },
+      "baseline": {
+        "STICK_SLIP": {
+          "tp": 3,
+          "fp": 338,
+          "fn": 7,
+          "late": 7,
+          "precision": 0.0088,
+          "recall": 0.3,
+          "f1": 0.0171,
+          "latency_mean_s": 1.667,
+          "latencies_s": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "median_latency_s": 0.0,
+          "false_alerts_per_normal_hour": 126.75
+        },
+        "WHIRL_BACKWARD": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        },
+        "BIT_BOUNCE": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        }
+      },
+      "n_runs": 10,
+      "data_hours": 5.1667,
+      "normal_hours": 2.6667
+    }
+  },
+  "elapsed_s": 5724.05,
+  "t_tol": {
+    "STICK_SLIP": 120.0,
+    "WHIRL_BACKWARD": 20.0,
+    "BIT_BOUNCE": 26.0
+  }
+}

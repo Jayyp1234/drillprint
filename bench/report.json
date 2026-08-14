@@ -1,0 +1,539 @@
+{
+  "protocol": "A19/\u00a714",
+  "harness": 2,
+  "normal_s": 240.0,
+  "library_version": "v8",
+  "snr_levels_db": [
+    20.0,
+    10.0,
+    3.0,
+    0.0
+  ],
+  "n_runs_per_snr": 10,
+  "segment_s": 300.0,
+  "calibration": {
+    "baseline": {
+      "budget_fa_per_hour": 1.0,
+      "validation_hours": 0.75,
+      "quantile": 0.9994444444444445,
+      "thresholds": {
+        "STICK_SLIP": 0.05354408311824251,
+        "WHIRL_BACKWARD": 0.010751713146401594,
+        "BIT_BOUNCE": 0.015618394519738912
+      },
+      "seeds": [
+        9001,
+        9002,
+        9003
+      ],
+      "variants": [
+        "quiet",
+        "pump60",
+        "pump110"
+      ]
+    },
+    "tier1": {
+      "budget_fa_per_hour": 2.0,
+      "validation_hours": 0.75,
+      "quantile": 0.9988888888888889,
+      "thresholds": {
+        "STICK_SLIP": 0.05209874230440269,
+        "WHIRL_BACKWARD": 0.010635710204707162,
+        "BIT_BOUNCE": 0.015481399909919006
+      },
+      "seeds": [
+        9001,
+        9002,
+        9003
+      ],
+      "variants": [
+        "quiet",
+        "pump60",
+        "pump110"
+      ]
+    }
+  },
+  "results": {
+    "20.0": {
+      "drillprint": {
+        "WHIRL_BACKWARD": {
+          "tp": 10,
+          "fp": 3,
+          "fn": 0,
+          "late": 0,
+          "precision": 0.7692,
+          "recall": 1.0,
+          "f1": 0.8696,
+          "latency_mean_s": 3.076,
+          "latencies_s": [
+            3.031,
+            2.568,
+            2.546,
+            3.792,
+            2.982,
+            2.86,
+            4.308,
+            2.989,
+            2.951,
+            2.734
+          ],
+          "median_latency_s": 2.982,
+          "false_alerts_per_normal_hour": 1.125
+        },
+        "STICK_SLIP": {
+          "tp": 9,
+          "fp": 22,
+          "fn": 1,
+          "late": 1,
+          "precision": 0.2903,
+          "recall": 0.9,
+          "f1": 0.439,
+          "latency_mean_s": 79.822,
+          "latencies_s": [
+            103.2,
+            99.2,
+            54.4,
+            77.6,
+            48.0,
+            105.6,
+            62.4,
+            75.2,
+            92.8
+          ],
+          "median_latency_s": 77.6,
+          "false_alerts_per_normal_hour": 8.25
+        },
+        "BIT_BOUNCE": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "late": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "latency_mean_s": 3.356,
+          "latencies_s": [
+            3.033,
+            2.521,
+            2.997,
+            3.007,
+            2.628,
+            2.044,
+            3.678,
+            7.775,
+            2.929,
+            2.949
+          ],
+          "median_latency_s": 2.997,
+          "false_alerts_per_normal_hour": 0.0
+        }
+      },
+      "baseline": {
+        "WHIRL_BACKWARD": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        },
+        "STICK_SLIP": {
+          "tp": 9,
+          "fp": 57,
+          "fn": 1,
+          "late": 0,
+          "precision": 0.1364,
+          "recall": 0.9,
+          "f1": 0.2368,
+          "latency_mean_s": 4.444,
+          "latencies_s": [
+            5.0,
+            5.0,
+            5.0,
+            5.0,
+            5.0,
+            5.0,
+            0.0,
+            5.0,
+            5.0
+          ],
+          "median_latency_s": 5.0,
+          "false_alerts_per_normal_hour": 21.375
+        },
+        "BIT_BOUNCE": {
+          "tp": 2,
+          "fp": 215,
+          "fn": 8,
+          "late": 3,
+          "precision": 0.0092,
+          "recall": 0.2,
+          "f1": 0.0176,
+          "latency_mean_s": 1.0,
+          "latencies_s": [
+            2.0,
+            0.0
+          ],
+          "median_latency_s": 2.0,
+          "false_alerts_per_normal_hour": 80.625
+        }
+      },
+      "n_runs": 10,
+      "data_hours": 5.1667,
+      "normal_hours": 2.6667
+    },
+    "10.0": {
+      "drillprint": {
+        "STICK_SLIP": {
+          "tp": 1,
+          "fp": 5,
+          "fn": 9,
+          "late": 8,
+          "precision": 0.1667,
+          "recall": 0.1,
+          "f1": 0.125,
+          "latency_mean_s": 45.6,
+          "latencies_s": [
+            45.6
+          ],
+          "median_latency_s": 45.6,
+          "false_alerts_per_normal_hour": 1.875
+        },
+        "WHIRL_BACKWARD": {
+          "tp": 10,
+          "fp": 2,
+          "fn": 0,
+          "late": 0,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1": 0.9091,
+          "latency_mean_s": 3.135,
+          "latencies_s": [
+            2.939,
+            3.258,
+            2.925,
+            2.974,
+            3.644,
+            2.917,
+            2.913,
+            3.558,
+            3.199,
+            3.028
+          ],
+          "median_latency_s": 3.028,
+          "false_alerts_per_normal_hour": 0.75
+        },
+        "BIT_BOUNCE": {
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "late": 0,
+          "precision": 0.9091,
+          "recall": 1.0,
+          "f1": 0.9524,
+          "latency_mean_s": 3.039,
+          "latencies_s": [
+            3.62,
+            3.65,
+            2.998,
+            3.042,
+            2.792,
+            2.773,
+            2.855,
+            2.652,
+            2.948,
+            3.063
+          ],
+          "median_latency_s": 2.998,
+          "false_alerts_per_normal_hour": 0.375
+        }
+      },
+      "baseline": {
+        "STICK_SLIP": {
+          "tp": 3,
+          "fp": 338,
+          "fn": 7,
+          "late": 7,
+          "precision": 0.0088,
+          "recall": 0.3,
+          "f1": 0.0171,
+          "latency_mean_s": 1.667,
+          "latencies_s": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "median_latency_s": 0.0,
+          "false_alerts_per_normal_hour": 126.75
+        },
+        "WHIRL_BACKWARD": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        },
+        "BIT_BOUNCE": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        }
+      },
+      "n_runs": 10,
+      "data_hours": 5.1667,
+      "normal_hours": 2.6667
+    },
+    "3.0": {
+      "drillprint": {
+        "WHIRL_BACKWARD": {
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "late": 0,
+          "precision": 0.9091,
+          "recall": 1.0,
+          "f1": 0.9524,
+          "latency_mean_s": 3.396,
+          "latencies_s": [
+            2.796,
+            4.019,
+            4.706,
+            2.906,
+            4.844,
+            3.099,
+            2.767,
+            3.222,
+            3.165,
+            2.432
+          ],
+          "median_latency_s": 3.165,
+          "false_alerts_per_normal_hour": 0.375
+        },
+        "STICK_SLIP": {
+          "tp": 2,
+          "fp": 2,
+          "fn": 8,
+          "late": 4,
+          "precision": 0.5,
+          "recall": 0.2,
+          "f1": 0.2857,
+          "latency_mean_s": 106.4,
+          "latencies_s": [
+            116.0,
+            96.8
+          ],
+          "median_latency_s": 116.0,
+          "false_alerts_per_normal_hour": 0.75
+        },
+        "BIT_BOUNCE": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "late": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "latency_mean_s": 3.97,
+          "latencies_s": [
+            2.997,
+            3.424,
+            3.332,
+            7.571,
+            3.196,
+            6.256,
+            3.392,
+            2.384,
+            4.172,
+            2.977
+          ],
+          "median_latency_s": 3.392,
+          "false_alerts_per_normal_hour": 0.0
+        }
+      },
+      "baseline": {
+        "WHIRL_BACKWARD": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        },
+        "STICK_SLIP": {
+          "tp": 1,
+          "fp": 182,
+          "fn": 9,
+          "late": 7,
+          "precision": 0.0055,
+          "recall": 0.1,
+          "f1": 0.0104,
+          "latency_mean_s": 5.0,
+          "latencies_s": [
+            5.0
+          ],
+          "median_latency_s": 5.0,
+          "false_alerts_per_normal_hour": 68.25
+        },
+        "BIT_BOUNCE": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        }
+      },
+      "n_runs": 10,
+      "data_hours": 5.1667,
+      "normal_hours": 2.6667
+    },
+    "0.0": {
+      "drillprint": {
+        "WHIRL_BACKWARD": {
+          "tp": 10,
+          "fp": 3,
+          "fn": 0,
+          "late": 0,
+          "precision": 0.7692,
+          "recall": 1.0,
+          "f1": 0.8696,
+          "latency_mean_s": 3.578,
+          "latencies_s": [
+            2.996,
+            4.625,
+            3.084,
+            3.823,
+            2.981,
+            3.882,
+            3.374,
+            2.828,
+            4.839,
+            3.348
+          ],
+          "median_latency_s": 3.374,
+          "false_alerts_per_normal_hour": 1.125
+        },
+        "STICK_SLIP": {
+          "tp": 3,
+          "fp": 3,
+          "fn": 7,
+          "late": 1,
+          "precision": 0.5,
+          "recall": 0.3,
+          "f1": 0.375,
+          "latency_mean_s": 66.933,
+          "latencies_s": [
+            77.6,
+            99.2,
+            24.0
+          ],
+          "median_latency_s": 77.6,
+          "false_alerts_per_normal_hour": 1.125
+        },
+        "BIT_BOUNCE": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "late": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "latency_mean_s": 3.434,
+          "latencies_s": [
+            3.631,
+            3.612,
+            3.707,
+            3.666,
+            3.688,
+            2.972,
+            3.01,
+            3.517,
+            2.848,
+            3.686
+          ],
+          "median_latency_s": 3.631,
+          "false_alerts_per_normal_hour": 0.0
+        }
+      },
+      "baseline": {
+        "WHIRL_BACKWARD": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        },
+        "STICK_SLIP": {
+          "tp": 0,
+          "fp": 63,
+          "fn": 10,
+          "late": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 23.625
+        },
+        "BIT_BOUNCE": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        }
+      },
+      "n_runs": 10,
+      "data_hours": 5.1667,
+      "normal_hours": 2.6667
+    }
+  },
+  "elapsed_s": 22989.05,
+  "t_tol": {
+    "STICK_SLIP": 120.0,
+    "WHIRL_BACKWARD": 20.0,
+    "BIT_BOUNCE": 26.0
+  },
+  "parallel": true
+}

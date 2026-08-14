@@ -1,0 +1,174 @@
+{
+  "protocol": "A19/\u00a714",
+  "harness": 2,
+  "normal_s": 240.0,
+  "library_version": "v8",
+  "snr_levels_db": [
+    0.0
+  ],
+  "n_runs_per_snr": 10,
+  "segment_s": 300.0,
+  "calibration": {
+    "baseline": {
+      "budget_fa_per_hour": 1.0,
+      "validation_hours": 0.75,
+      "quantile": 0.9994444444444445,
+      "thresholds": {
+        "STICK_SLIP": 0.05354408311824251,
+        "WHIRL_BACKWARD": 0.010751713146401594,
+        "BIT_BOUNCE": 0.015618394519738912
+      },
+      "seeds": [
+        9001,
+        9002,
+        9003
+      ],
+      "variants": [
+        "quiet",
+        "pump60",
+        "pump110"
+      ]
+    },
+    "tier1": {
+      "budget_fa_per_hour": 2.0,
+      "validation_hours": 0.75,
+      "quantile": 0.9988888888888889,
+      "thresholds": {
+        "STICK_SLIP": 0.05209874230440269,
+        "WHIRL_BACKWARD": 0.010635710204707162,
+        "BIT_BOUNCE": 0.015481399909919006
+      },
+      "seeds": [
+        9001,
+        9002,
+        9003
+      ],
+      "variants": [
+        "quiet",
+        "pump60",
+        "pump110"
+      ]
+    }
+  },
+  "results": {
+    "0.0": {
+      "drillprint": {
+        "WHIRL_BACKWARD": {
+          "tp": 10,
+          "fp": 3,
+          "fn": 0,
+          "late": 0,
+          "precision": 0.7692,
+          "recall": 1.0,
+          "f1": 0.8696,
+          "latency_mean_s": 3.578,
+          "latencies_s": [
+            2.996,
+            4.625,
+            3.084,
+            3.823,
+            2.981,
+            3.882,
+            3.374,
+            2.828,
+            4.839,
+            3.348
+          ],
+          "median_latency_s": 3.374,
+          "false_alerts_per_normal_hour": 1.125
+        },
+        "STICK_SLIP": {
+          "tp": 3,
+          "fp": 3,
+          "fn": 7,
+          "late": 1,
+          "precision": 0.5,
+          "recall": 0.3,
+          "f1": 0.375,
+          "latency_mean_s": 66.933,
+          "latencies_s": [
+            77.6,
+            99.2,
+            24.0
+          ],
+          "median_latency_s": 77.6,
+          "false_alerts_per_normal_hour": 1.125
+        },
+        "BIT_BOUNCE": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "late": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "latency_mean_s": 3.434,
+          "latencies_s": [
+            3.631,
+            3.612,
+            3.707,
+            3.666,
+            3.688,
+            2.972,
+            3.01,
+            3.517,
+            2.848,
+            3.686
+          ],
+          "median_latency_s": 3.631,
+          "false_alerts_per_normal_hour": 0.0
+        }
+      },
+      "baseline": {
+        "WHIRL_BACKWARD": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        },
+        "STICK_SLIP": {
+          "tp": 0,
+          "fp": 63,
+          "fn": 10,
+          "late": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 23.625
+        },
+        "BIT_BOUNCE": {
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "late": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "latency_mean_s": null,
+          "latencies_s": [],
+          "median_latency_s": null,
+          "false_alerts_per_normal_hour": 3.75
+        }
+      },
+      "n_runs": 10,
+      "data_hours": 5.1667,
+      "normal_hours": 2.6667
+    }
+  },
+  "elapsed_s": 5717.88,
+  "t_tol": {
+    "STICK_SLIP": 120.0,
+    "WHIRL_BACKWARD": 20.0,
+    "BIT_BOUNCE": 26.0
+  }
+}

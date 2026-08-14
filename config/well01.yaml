@@ -1,0 +1,22 @@
+# Well-context config — single source for L, N_b, diameters, channel set (A13).
+name: well01
+length_m: 3014.1
+n_blades: 5
+d_hole_m: 0.216
+d_bit_m: 0.171
+bit_depth_m: 3014.1
+hole_depth_m: 3014.1
+block_pos_m: 12.3
+string_weight_kn: 1022.0
+channels:
+  - TORQUE_SURF
+  - RPM_SURF
+  - RPM_DH
+  - ACC_LAT_X
+  - ACC_LAT_Y
+  - ACC_AX
+  - WOB
+  - HOOKLOAD
+  - BIT_DEPTH
+  - HOLE_DEPTH
+  - BLOCK_POS
